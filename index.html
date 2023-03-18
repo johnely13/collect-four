@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Connect 4 by JECF</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu active" id="menu">
+            <h1>Welcome to Connect Four!</h1>
+            <button id="btnPlayWithFriend">Play with a friend</button>
+            <button id="btnPlayWithAI">Play with AI</button>
+        </div>
+
+        <div class="header">
+            <h1 id="playerDisplay"></h1>
+        </div>
+        <div id="board" class="board">
+            <div id="column1">
+                <div class="columnbody">
+                    <div class="cell" id="A6"></div>
+                    <div class="cell" id="A5"></div>
+                    <div class="cell" id="A4"></div>
+                    <div class="cell" id="A3"></div>
+                    <div class="cell" id="A2"></div>
+                    <div class="cell" id="A1"></div>
+                </div>
+                <!-- <button id="btnColumn1Add">Select</button> -->
+            </div>
+            
+            <div id="column2">
+                <div class="columnbody">
+                    <div class="cell" id="B6"></div>
+                    <div class="cell" id="B5"></div>
+                    <div class="cell" id="B4"></div>
+                    <div class="cell" id="B3"></div>
+                    <div class="cell" id="B2"></div>
+                    <div class="cell" id="B1"></div>
+                </div>
+                <!-- <button id="btnColumn2Add">Select</button> -->
+            </div>
+    
+            <div id="column3">
+                <div class="columnbody">
+                    <div class="cell" id="C6"></div>
+                    <div class="cell" id="C5"></div>
+                    <div class="cell" id="C4"></div>
+                    <div class="cell" id="C3"></div>
+                    <div class="cell" id="C2"></div>
+                    <div class="cell" id="C1"></div>
+                </div>
+                <!-- <button id="btnColumn3Add">Select</button> -->
+            </div>
+    
+            <div id="column4">
+                <div class="columnbody">
+                    <div class="cell" id="D6"></div>
+                    <div class="cell" id="D5"></div>
+                    <div class="cell" id="D4"></div>
+                    <div class="cell" id="D3"></div>
+                    <div class="cell" id="D2"></div>
+                    <div class="cell" id="D1"></div>
+                </div>
+                <!-- <button id="btnColumn4Add">Select</button> -->
+            </div>
+    
+            <div id="column5">
+                <div class="columnbody">
+                    <div class="cell" id="E6"></div>
+                    <div class="cell" id="E5"></div>
+                    <div class="cell" id="E4"></div>
+                    <div class="cell" id="E3"></div>
+                    <div class="cell" id="E2"></div>
+                    <div class="cell" id="E1"></div>
+                </div>
+                <!-- <button id="btnColumn5Add">Select</button> -->
+            </div>
+    
+            <div id="column6">
+                <div class="columnbody">
+                    <div class="cell" id="F6"></div>
+                    <div class="cell" id="F5"></div>
+                    <div class="cell" id="F4"></div>
+                    <div class="cell" id="F3"></div>
+                    <div class="cell" id="F2"></div>
+                    <div class="cell" id="F1"></div>
+                </div>
+                <!-- <button id="btnColumn6Add">Select</button> -->
+            </div>
+    
+            <div id="column7">
+                <div class="columnbody">
+                    <div class="cell" id="G6"></div>
+                    <div class="cell" id="G5"></div>
+                    <div class="cell" id="G4"></div>
+                    <div class="cell" id="G3"></div>
+                    <div class="cell" id="G2"></div>
+                    <div class="cell" id="G1"></div>
+                </div>
+                <!-- <button id="btnColumn7Add">Select</button> -->
+            </div>
+        </div>
+
+        <div class="instruction" id="instruction">
+            <div>
+                <p>(Just click on a column where you want to put your piece)</p>
+            </div>
+            <div>
+                <h2 id="player1Info"></h2>
+                <div class="player red"></div>
+            </div>
+            <div>
+                <h2 id="player2Info"></h2>
+                <div class="player yellow"></div>
+            </div>
+            <div>
+                <a href="./">New Game</a>
+            </div>
+        </div>
+
+        <div class="pop-up" id="displayWinner">
+            <h1 id="displayWinnerText">Wins</h1>
+            <a href="./">Play again?</a>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
